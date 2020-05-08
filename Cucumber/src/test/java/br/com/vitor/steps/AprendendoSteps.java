@@ -1,3 +1,4 @@
+package br.com.vitor.steps;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -6,12 +7,13 @@ import java.util.Date;
 
 import org.junit.Assert;
 
-
+import br.com.vitor.converters.DataConverter;
+import cucumber.api.Transform;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 import cucumber.api.java.pt.Quando;
 
-public class Aprendendo {
+public class AprendendoSteps {
 	@Dado("^que criei o arquivo certo$")
 	public void que_criei_o_arquivo_certo() throws Throwable {
 
@@ -47,13 +49,10 @@ public class Aprendendo {
 	Date entrega = new Date();
 	
 	
-	@Dado("^que a entrega é dia (\\d+)/(\\d+)/(\\d+)$")
-	public void queAEntregaÉDia(int dia, int mes, int ano) throws Throwable {
-	    Calendar cal = Calendar.getInstance();
-	    cal.set(Calendar.DAY_OF_MONTH, dia);
-	    cal.set(Calendar.MONTH, mes - 1);
-	    cal.set(Calendar.YEAR, ano);
-	    entrega = cal.getTime();
+	@Dado("^que a entrega é dia (.*)$")
+	public void queAEntregaÉDia(@Transform(DataConverter.class) Date data) throws Throwable {
+	    entrega = data;
+	    System.out.println(entrega);
 	}
 
 	@Quando("^a entrega atrasar em (\\d+) (dia|dias|mes|meses)$")
@@ -73,9 +72,48 @@ public class Aprendendo {
 	public void aEntregaSeráEfetuadaEm(String data) throws Throwable {
 	    DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 	    String dataFormatada = format.format(entrega);
-	    System.out.println(dataFormatada);
-	    System.out.println(data);
+//	    System.out.println(dataFormatada);
+//	    System.out.println(data);
 	    Assert.assertEquals(data, dataFormatada);   
 	}
 	
+	//###############################################################
+	private String numtiket = "";
+	
+	@Dado("^que o ticket( especial)? é (A.\\d{3})$")
+	public void queOTicketÉAF(String tipo, String tiket) throws Throwable {
+		numtiket = tiket;
+	}
+
+	@Dado("^que o valor da passagem é R\\$ (.*)$")
+	public void queOValorDaPassagemÉR$(Double numero) throws Throwable {
+	    System.out.println(numero);
+	}
+	private String inNome = "";
+	
+	@Dado("^que o nome do passageiro é \"(.{5,20})\"$")
+	public void queONomeDoPassageiroÉ(String nome) throws Throwable {
+	    inNome = nome;
+	}
+	
+	private int infone1, infone2 = 0;	
+	
+	@Dado("^que o telefone do passageiro é (9\\d{4})-(\\d{4})$")
+	public void queOTelefoneDoPassageiroÉ(int fone1, int fone2) throws Throwable {
+	    infone1 = fone1;
+	    infone2 = fone2;
+	}
+
+	@Quando("^criar os steps$")
+	public void criarOsSteps() throws Throwable {
+	  
+	}
+
+	@Então("^o teste vai funcionar$")
+	public void oTesteVaiFuncionar() throws Throwable {
+	    System.out.println(infone1);
+	    System.out.println(infone2);
+	    System.out.println(inNome);
+	    System.out.println(numtiket);
+	}
 }
