@@ -1,0 +1,24 @@
+import cucumber.api.PendingException;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Aprendendo {
+	@Given("^que criei o arquivo certo$")
+	public void que_criei_o_arquivo_certo() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^executa-lo$")
+	public void executa_lo() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^deve ter sucesso$")
+	public void deve_ter_sucesso() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+}

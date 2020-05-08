@@ -1,0 +1,6 @@
+Feature: Aprender Cucumber
+
+Scenario: Testes Iniciais
+	Given que criei o arquivo certo
+	When executa-lo
+	Then deve ter sucesso

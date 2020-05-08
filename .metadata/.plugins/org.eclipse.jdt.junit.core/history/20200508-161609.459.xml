@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Runner" project="Cucumber" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner" time="0.036">
+    <testsuite name="Funcionalidade: Aprender Cucumber" time="0.036">
+      <testsuite name="Cenário: Testes Iniciais" time="0.01">
+        <testcase name="Dado que criei o arquivo certo" classname="Cenário: Testes Iniciais" time="0.008"/>
+        <testcase name="Quando executa-lo" classname="Cenário: Testes Iniciais" time="0.001"/>
+        <testcase name="Então deve ter sucesso" classname="Cenário: Testes Iniciais" time="0.001"/>
+      </testsuite>
+      <testsuite name="Cenário: Deve incrementar O Contador" time="0.017">
+        <testcase name="Dado que o valor do contador é 15" classname="Cenário: Deve incrementar O Contador" time="0.002"/>
+        <testcase name="Quando eu incrementar em 3" classname="Cenário: Deve incrementar O Contador" time="0.001"/>
+        <testcase name="Então o valor do contador será 18" classname="Cenário: Deve incrementar O Contador" time="0.014"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

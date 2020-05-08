@@ -1,0 +1,7 @@
+# language: pt
+Funcionalidade: Aprender Cucumber
+
+Cenário: Testes Iniciais
+	Dado que criei o arquivo certo
+	Quando executa-lo
+	Então deve ter sucesso
