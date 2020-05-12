@@ -7,15 +7,15 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features/locadora.feature",
+		features = "src/test/resources/features/contas.feature",
 		glue = "br.com.vitor.steps",
-		tags = {},
-		plugin = "pretty",
-		monochrome = true,
+		tags = {"~@ignore"},
+		plugin = {"pretty", "html:target/retport-html", "json:target/report.json"},
+		monochrome = false,
 		snippets = SnippetType.CAMELCASE,
 		dryRun = false,
 		strict = false
 		)
-public class Runner {
+public class RunnerTest {
 
 }
