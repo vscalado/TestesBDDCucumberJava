@@ -7,9 +7,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/test/resources/features/aulaRegex.feature",
+		features = "src/test/resources/features/locadora.feature",
 		glue = "br.com.vitor.steps",
-		tags = {"@tipo1, @tipo2"},
+		tags = {},
 		plugin = "pretty",
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
