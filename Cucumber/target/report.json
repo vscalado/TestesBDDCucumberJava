@@ -18,92 +18,418 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 7236688500,
+              "status": "passed"
             },
             "line": 9,
             "name": "que estou acessando a aplicação",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
+            },
             "keyword": "Dado "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 368551100,
+              "status": "passed"
             },
             "line": 10,
-            "name": "informo o usuário \"a@a\"",
-            "match": {},
+            "name": "informo o usuário \"vitor.santos.calado@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vitor.santos.calado@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "InserirContasSteps.informoOUsuário(String)"
+            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 198468700,
+              "status": "passed"
             },
             "line": 11,
-            "name": "a senha \"a\"",
-            "match": {},
+            "name": "a senha \"Nagilla2601\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nagilla2601",
+                  "offset": 9
+                }
+              ],
+              "location": "InserirContasSteps.aSenha(String)"
+            },
             "keyword": "E "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 708973600,
+              "status": "passed"
             },
             "line": 12,
             "name": "seleciono entrar",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.selecionoEntrar()"
+            },
             "keyword": "E "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 62099500,
+              "status": "passed"
             },
             "line": 13,
             "name": "visualizo a página inicial",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.visualizoAPáginaInicial()"
+            },
             "keyword": "Então "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 104549200,
+              "status": "passed"
             },
             "line": 14,
             "name": "seleciono Contas",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.selecionoContas()"
+            },
             "keyword": "Quando "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 363516700,
+              "status": "passed"
             },
             "line": 15,
             "name": "seleciono Adicionar",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.selecionoAdicionar()"
+            },
             "keyword": "E "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 216812600,
+              "status": "passed"
             },
             "line": 16,
             "name": "informo a conta \"Conta de Teste\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conta de Teste",
+                  "offset": 17
+                }
+              ],
+              "location": "InserirContasSteps.informoAConta(String)"
+            },
             "keyword": "E "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1397584000,
+              "status": "passed"
             },
             "line": 17,
             "name": "seleciono Salvar",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.selecionoSalvar()"
+            },
             "keyword": "E "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 40671300,
+              "status": "passed"
             },
             "line": 18,
             "name": "a conta é inserida com sucesso",
-            "match": {},
+            "match": {
+              "location": "InserirContasSteps.aContaÉInseridaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Não deve inserir uma conta sem nome",
+        "description": "",
+        "id": "cadastro-de-contas;não-deve-inserir-uma-conta-sem-nome",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 4893467400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 421476400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "informo o usuário \"vitor.santos.calado@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vitor.santos.calado@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "InserirContasSteps.informoOUsuário(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 279156600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "a senha \"Nagilla2601\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nagilla2601",
+                  "offset": 9
+                }
+              ],
+              "location": "InserirContasSteps.aSenha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1007397100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "seleciono entrar",
+            "match": {
+              "location": "InserirContasSteps.selecionoEntrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 68208400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "visualizo a página inicial",
+            "match": {
+              "location": "InserirContasSteps.visualizoAPáginaInicial()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 137033500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "seleciono Contas",
+            "match": {
+              "location": "InserirContasSteps.selecionoContas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 393322100,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "seleciono Adicionar",
+            "match": {
+              "location": "InserirContasSteps.selecionoAdicionar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 477602200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "seleciono Salvar",
+            "match": {
+              "location": "InserirContasSteps.selecionoSalvar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 148109400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "sou notificar que o nome da conta é obrigatório",
+            "match": {
+              "location": "InserirContasSteps.souNotificarQueONomeDaContaÉObrigatório()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Não deve inserir uma conta com nome já existente",
+        "description": "",
+        "id": "cadastro-de-contas;não-deve-inserir-uma-conta-com-nome-já-existente",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 6276076900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "InserirContasSteps.queEstouAcessandoAAplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 791415900,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "informo o usuário \"vitor.santos.calado@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vitor.santos.calado@gmail.com",
+                  "offset": 19
+                }
+              ],
+              "location": "InserirContasSteps.informoOUsuário(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 435139200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "a senha \"Nagilla2601\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nagilla2601",
+                  "offset": 9
+                }
+              ],
+              "location": "InserirContasSteps.aSenha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 1105375900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "seleciono entrar",
+            "match": {
+              "location": "InserirContasSteps.selecionoEntrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 117578300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "visualizo a página inicial",
+            "match": {
+              "location": "InserirContasSteps.visualizoAPáginaInicial()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 174514000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "seleciono Contas",
+            "match": {
+              "location": "InserirContasSteps.selecionoContas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 454631000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "seleciono Adicionar",
+            "match": {
+              "location": "InserirContasSteps.selecionoAdicionar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 517398700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "informo a conta \"Conta de Teste\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Conta de Teste",
+                  "offset": 17
+                }
+              ],
+              "location": "InserirContasSteps.informoAConta(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 563062900,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "seleciono Salvar",
+            "match": {
+              "location": "InserirContasSteps.selecionoSalvar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 76369700,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "sou notificado que já existe uma conta com esse nome",
+            "match": {
+              "location": "InserirContasSteps.souNotificadoQueJáExisteUmaContaComEsseNome()"
+            },
             "keyword": "Então "
           }
         ]

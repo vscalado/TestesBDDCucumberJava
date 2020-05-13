@@ -7,8 +7,8 @@ Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 
 	Cenário: Deve inserir uma conta com sucesso
 		Dado que estou acessando a aplicação
-		Quando informo o usuário "a@a"
-		E a senha "a"
+		Quando informo o usuário "vitor.santos.calado@gmail.com"
+		E a senha "Nagilla2601"
 		E seleciono entrar
 		Então visualizo a página inicial
 		Quando seleciono Contas
@@ -16,22 +16,22 @@ Para que eu possa distribuir meu dinheiro de uma forma mais organizada
 		E informo a conta "Conta de Teste"
 		E seleciono Salvar
 		Então a conta é inserida com sucesso
-@ignore
+
 	Cenário: Não deve inserir uma conta sem nome
 		Dado que estou acessando a aplicação
-		Quando informo o usuário "a@a"
-		E a senha "a"
+		Quando informo o usuário "vitor.santos.calado@gmail.com"
+		E a senha "Nagilla2601"
 		E seleciono entrar
 		Então visualizo a página inicial
 		Quando seleciono Contas
 		E seleciono Adicionar
 		E seleciono Salvar
 	  Então sou notificar que o nome da conta é obrigatório
-@ignore
+
 	Cenário: Não deve inserir uma conta com nome já existente
 		Dado que estou acessando a aplicação
-		Quando informo o usuário "a@a"
-		E a senha "a"
+		Quando informo o usuário "vitor.santos.calado@gmail.com"
+		E a senha "Nagilla2601"
 		E seleciono entrar
 		Então visualizo a página inicial
 		Quando seleciono Contas
